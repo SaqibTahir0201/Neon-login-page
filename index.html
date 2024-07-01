@@ -1,34 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Form</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="login-box">
-        <h2>Login Form</h2>
-        <form action="">
-            <div class="user-box">
-                <input type="text" required>
-                <label for="">username</label>
-            </div>
+    <link rel="stylesheet" href="signing.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Create Account -->
+    <div class="create-account">
+      <h2>Create Account</h2>
+      <form action="">
+        <div class="user-box">
+          <input id="signup_email" type="email" required />
+          <label for="">Email</label>
+        </div>
 
-            <div class="user-box">
-                <input type="password" required>
-                <label for="">password</label>
-            </div>
-
-            <a href="">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>submit
-            </a>
-        </form>
+        <div class="user-box">
+          <input id="signup_password" type="password" required />
+          <label for="">password</label>
+        </div>
+        <!-- <button></button> -->
+        <a id="signup_btn" href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>Create Account
+        </a>
+      </form>
     </div>
+    <!-- Signing Account -->
+    <div class="signing-account">
+      <h2>Signing Account</h2>
+      <form action="">
+        <div class="signing-box">
+          <input id="signing_email" type="email" required />
+          <label id="label" for="">Email</label>
+        </div>
 
-    
-</body>
+        <div class="signing-box">
+          <input id="signing_password" type="password" required />
+          <label for="">password</label>
+        </div>
+        <!-- <button></button> -->
+        <a id="signing_btn" href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>Signing
+        </a>
+      </form>
+    </div>
+    <script src="script.js" type="module"></script>
+  </body>
 </html>
